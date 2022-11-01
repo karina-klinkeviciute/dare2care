@@ -13,7 +13,7 @@
         <div id="situation">
             <div id="image"></div>
             <div id="description"></div>
-            <div id="answers"></div>
+            <div id="choices"></div>
             <button>Pateikti</button>
         </div>
         <div id="results">
