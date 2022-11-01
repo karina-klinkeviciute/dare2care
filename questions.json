@@ -1,0 +1,48 @@
+{"groups": {
+        "1" : {
+            "name": "pirma grupė",
+            "situations": {
+                "1" : {
+                    "image": "1.png",
+                    "description": "Situacijos aprašymas",
+                    "choices": 
+                    {
+                        "1": {
+                            "text": "pirmas variantas",
+                            "points": 0
+                        },
+                        "2": {
+                            "text": "antras variantas",
+                            "points": 1     
+                        },
+                        "3": {
+                            "text": "antras variantas",
+                            "points": 2     
+                        }
+                    },
+                    "explanation": "aprašymas, ką reiškia kiekvienas atsakymas" 
+                },
+                "2" : {
+                    "image": "2.png",
+                    "description": "Situacijos aprašymas2",
+                    "choices": 
+                    {
+                        "1": {
+                            "text": "pirmas variantas2",
+                            "points": 0
+                        },
+                        "2": {
+                            "text": "antras variantas2",
+                            "points": 1     
+                        },
+                        "3": {
+                            "text": "antras variantas2",
+                            "points": 2     
+                        }
+                    },
+                    "explanation": "aprašymas, ką reiškia kiekvienas atsakymas2" 
+                }
+            }
+        }
+}
+}
