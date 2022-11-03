@@ -10,10 +10,44 @@
 // If it's a last question, we show "show answer" instead of "submit and after clicking that we get all the results" 
 
 
-results = {
-    1: "pirmas paaiškinimas",
-    2: "antras paaiškinimas",
-    3: "trečias paaiškinimas"
+const explanations = {
+    1: `
+        Smurtiniai santykiai.
+        <p>
+        Tai santykiai, kuriuose yra daug žodinio, psichologinio, emocinio ar fizinio smurto elementų.
+        Kai partneris/ė:
+        - komunikuoja skaudindamas/a, manipuliuodamas/a ar grasindamas/a.
+        - negražiai elgiasi kito atžvilgiu (mistreating)
+        - be pagrindo kaltina išdavyste (cheating)
+        - nemano ir nepripažįsta, kad jo/s veiksmai yra smurtiniai
+        - kontroliuoja
+        - izoliuoja savo partnerį/ę nuo kitų
+        `,
+    2: `
+        Nesveiki santykiai
+        <p>
+        Tai santykiai, kuriems neretai trūksta pagarbos ir tolerancijos. Neretai partneriai/ės:
+        - nebendrauja
+        - negerbia
+        - nepasitiki
+        - nėra nuoširdūs/džios
+        - mėgina kontroliuoti
+        - spaudžia kažkokiom veiklom
+        - sukuria ekonominį spaudimą`,
+    3: `Sveiki santykiai
+        <p>
+        Tai pagarbūs vienas kitam santykiai, kuomet tu ir tavo partneris/ė:
+        - pasitiki vienas/a kitu/a
+        - esate nuoširdūs/džios ir atviri/os vienas/a kitam/ai
+        - lygūs
+        - kur galite mėgautis laiku būnant atskirai
+        - problemas ir svarbius klausimus sprendžiate kartu
+        - nedarote vienas/a kitam/ai ekonominio/finansinio spaudimo
+        - praktikuojate sutikimą (visais lygiais)
+        - pripažįstama autonomija ir orumas
+        - partnerio/ės asmenybės augimo palaikymas
+        - problemos sprendžiamos adekvačiai prisiimant atsakomybę
+    `
 }
 
 function randomInteger(min, max) {
@@ -66,6 +100,8 @@ console.log(situations)
 var currentSituation = 0
 var pointsTotal = 0
 var answers = []
+var choice = ""
+var currentChoice = ""
 
 const startButton = document.getElementById("start")
 const nextButton = document.getElementById("submit")
@@ -76,11 +112,16 @@ situationDiv.style.display = "none"
 const imageDiv = document.getElementById("image")
 const descriptionDiv = document.getElementById("description")
 const choicesDiv = document.getElementById("choices")
+const choiceA = document.getElementById("A")
+const choiceB = document.getElementById("B")
+const choiceC = document.getElementById("C")
+const resultsDiv = document.getElementById("results")
 
 
 function showSituation() {
     console.log("showing situation: ", currentSituation)
     situationDiv.style.display = "block"
+    startButton.style.display = "none"
     let situation = situations[currentSituation]
     let image = situation["image"]
     imageDiv.innerHTML = `<img src="images/${image}" alt="">`
@@ -88,30 +129,64 @@ function showSituation() {
     let description = situation["description"]
 
     descriptionDiv.innerText = description
+
+    let choices = situation["choices"]
+    console.log("choices: ", choices)
+
+    for (let choice in choices)
+    {
+        let choiceDiv = document.getElementById(choice)
+        choiceDiv.innerText = choices[choice].text
+    }
     
 }
 
-
 function showResults() {
+    let results = 0
+    for (let answer in answers){
+        if (answers[answer] == "B")
+        {
+            results += 1
+        }
+        else if (answers[answer] == "A")
+        {
+            results += 2
+        }
+    }
+    console.log("results: ", results)
+    if (results <=6)
+        {resultsDiv.innerHTML = explanations[1]}
+    else if (results <= 12)
+        {resultsDiv.innerHTML = explanations[2]}
+    else 
+        {resultsDiv.innerHTML = explanations[3]}
+
     // TODO: parodom atsakymą pagal surinktus taškų skaičius. 
     // Taip pat parodom atsakytus atsakymus ir situacijų paaiškinimus.
 }
 
-function addPoints(){
-    // TODO: pridedam tiek points, kiek turi currentSituation 
-    // ir pasižymim, kuris variantas buvo pasirinktas, į "answers"
+function choiceClicked(choice)
+{
+    currentChoice = choice
+    console.log(choice)
+    // TODO: save this choice to some separate variable and only push it when the "submit" button is pressed
 }
 
+choiceA.addEventListener("click", ()=> choiceClicked("A"))
+choiceB.addEventListener("click", ()=> choiceClicked("B"))
+choiceC.addEventListener("click", ()=> choiceClicked("C"))
 
 startButton.addEventListener("click", showSituation);
 nextButton.addEventListener("click", ()=>{
-    addPoints()
+    answers.push(currentChoice)
+    console.log(answers)
     currentSituation += 1
     if (currentSituation <9){
 
         showSituation()
     }
     else {
+        situationDiv.style.display = "none"
         showResults()
     }
     
