@@ -90,12 +90,11 @@ async function selectSituations() {
 
     return situations
 
-    // TODO: randomizuojam atsakymus (ka=kur, gal prieš rodant)
+    // TODO: randomizuojam atsakymus (kažkur, gal prieš rodant)
 
 }
 
 const situations = await selectSituations()
-console.log(situations)
 
 var currentSituation = 0
 var pointsTotal = 0
@@ -119,7 +118,6 @@ const resultsDiv = document.getElementById("results")
 
 
 function showSituation() {
-    console.log("showing situation: ", currentSituation)
     situationDiv.style.display = "block"
     startButton.style.display = "none"
     let situation = situations[currentSituation]
@@ -131,11 +129,11 @@ function showSituation() {
     descriptionDiv.innerText = description
 
     let choices = situation["choices"]
-    console.log("choices: ", choices)
 
     for (let choice in choices)
     {
         let choiceDiv = document.getElementById(choice)
+        choiceDiv.classList.remove("box")
         choiceDiv.innerText = choices[choice].text
     }
     
@@ -153,7 +151,6 @@ function showResults() {
             results += 2
         }
     }
-    console.log("results: ", results)
     if (results <=6)
         {resultsDiv.innerHTML = explanations[1]}
     else if (results <= 12)
@@ -161,25 +158,29 @@ function showResults() {
     else 
         {resultsDiv.innerHTML = explanations[3]}
 
-    // TODO: parodom atsakymą pagal surinktus taškų skaičius. 
-    // Taip pat parodom atsakytus atsakymus ir situacijų paaiškinimus.
+
+    // TODO: Taip pat parodom atsakytus atsakymus ir situacijų paaiškinimus.
 }
 
 function choiceClicked(choice)
 {
     currentChoice = choice
-    console.log(choice)
-    // TODO: save this choice to some separate variable and only push it when the "submit" button is pressed
+    let clickedDiv = document.getElementById(choice)
+    console.log("clicked: ", clickedDiv)
+    choiceA.classList.remove("box")
+    choiceB.classList.remove("box")
+    choiceC.classList.remove("box")
+    clickedDiv.classList.add("box")
+    // TODO: išskirti mygtuką, kuris buvo paspaustas, pavyzdžiui apibrėžti rėmeliu (ar tiksliau, pridėti klasę "chosen" o stylint su css) - principas padarytas, reiks suderinti su dizainu
 }
 
 choiceA.addEventListener("click", ()=> choiceClicked("A"))
 choiceB.addEventListener("click", ()=> choiceClicked("B"))
 choiceC.addEventListener("click", ()=> choiceClicked("C"))
 
-startButton.addEventListener("click", showSituation);
+startButton.addEventListener("click", showSituation)
 nextButton.addEventListener("click", ()=>{
     answers.push(currentChoice)
-    console.log(answers)
     currentSituation += 1
     if (currentSituation <9){
 
@@ -190,37 +191,4 @@ nextButton.addEventListener("click", ()=>{
         showResults()
     }
     
-});
-
-
-
-// for (let group in groups)
-//     {
-    
-//         let situations_group = groups[group]
-//         for (let situation in situations_group.situations)
-//         {
-//             // console.log(situation, " klausimas:")
-//             console.log(situations_group.situations[situation])
-            
-//             // adding image
-//             let image = situations_group.situations[situation]["image"]
-//             let imageDiv = document.getElementById("image")
-//             imageDiv.innerHTML = `<img src="images/${image}" alt="">`
-
-//             // adding description
-//             let description = situations_group.situations[situation]["description"]
-//             let descriptionDiv = document.getElementById("description")
-//             descriptionDiv.innerText = description
-
-//             // adding answers
-//             let choicesDiv = document.getElementById("choices")
-//             for(let choice in situations_group.situations[situation]["choices"])
-//                 {
-//                     console.log(situations_group.situations[situation].choices[choice])
-//                     let choiceDiv = document.createElement("div")
-//                     choiceDiv.innerText = situations_group.situations[situation].choices[choice].text
-//                     choicesDiv.appendChild(choiceDiv)
-//                 }
-//         }
-//     }
+})
