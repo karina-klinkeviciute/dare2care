@@ -20,7 +20,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija susijusi su intymių vieno iš partnerių ribų peržengimu. Pirmasis atsakymo variantas reiškia pagarbų ribas išlaikantį santykį (sveikų santykių požymis; 2 taškai), antrajame akivaizdus spaudimas (nesveikų santykių požymis; 1 taškas), trečiajame – kaltinimas (smurtinių santykių požymis; 0 taškų)." 
+                    "explanation": "Ši situacija susijusi su intymių vieno iš partnerių ribų peržengimu. Pirmasis atsakymo variantas reiškia pagarbų ribas išlaikantį santykį (sveikų santykių požymis), antrajame akivaizdus spaudimas (nesveikų santykių požymis), trečiajame – kaltinimas (smurtinių santykių požymis)." 
                 },
                 2 : {
                     "image": "block1/2.jpg",
@@ -40,7 +40,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Tai, kas čia aprašyta – per amžius įvairiose kultūrose besikartojusi ir nusistovėjusi kaip smurto ir spaudimo situacija, kuri tuo pačiu gali būti ir partnerių abipusės pagarbos ir lygybės išraiška ar indikatorius. Pirmasis atsakymo variantas parodo, kad pora praktikuoja abipusį sutikimą (sveikų santykių požymis; 2 taškai), antrasis aiškiai indikuoja spaudimą (nesveikų santykių požymis; 1 taškas), trečiajame pereinama į puolimą, t. y. kaltinimus ir manipuliaciją (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Tai, kas čia aprašyta – per amžius įvairiose kultūrose besikartojusi ir nusistovėjusi kaip smurto ir spaudimo situacija, kuri tuo pačiu gali būti ir partnerių abipusės pagarbos ir lygybės išraiška ar indikatorius. Pirmasis atsakymo variantas parodo, kad pora praktikuoja abipusį sutikimą (sveikų santykių požymis), antrasis aiškiai indikuoja spaudimą (nesveikų santykių požymis), trečiajame pereinama į puolimą, t. y. kaltinimus ir manipuliaciją (smurtinių santykių požymiai)." 
                 },
                 3 : {
                     "image": "block1/3.jpg",
@@ -60,7 +60,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Aprašytoji situacija – kito žmogaus, t. y. moters po gimdymo, išvaizdos komentavimas ir reakcija į tai – yra indikatorius to, kiek poroje įsileidžiamas ir kultivuojamas kito išorės kritikavimas. Pirmasis atsakymo variantas – pavyzdys to, kai toks žalingas elgesys yra atpažįstamas, pripažįstamas, dėl jo atsiprašoma ir jis eliminuojamas (tai nurodo į pagarbius, kito asmens autonomiją ir orumą pripažįstančius, t. y. sveikus santykius; 2 taškai). Antrasis – pavyzdys to, kai problemos nematoma ir vietoj to žeminančiai sukritikuojama pati kritika (nesveikų santykių požymiai; 1 taškas). Trečiasis pavyzdys – žalingas elgesys (kito išvaizdos kritikavimas) ne tik nepripažįstamas, bet dar ir stiprinamas bei atsisuka prieš pačią/patį kritikavusiąją/kritikavusįjį (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Aprašytoji situacija – kito žmogaus, t. y. moters po gimdymo, išvaizdos komentavimas ir reakcija į tai – yra indikatorius to, kiek poroje įsileidžiamas ir kultivuojamas kito išorės kritikavimas. Pirmasis atsakymo variantas – pavyzdys to, kai toks žalingas elgesys yra atpažįstamas, pripažįstamas, dėl jo atsiprašoma ir jis eliminuojamas (tai nurodo į pagarbius, kito asmens autonomiją ir orumą pripažįstančius, t. y. sveikus santykius). Antrasis – pavyzdys to, kai problemos nematoma ir vietoj to žeminančiai sukritikuojama pati kritika (nesveikų santykių požymiai). Trečiasis pavyzdys – žalingas elgesys (kito išvaizdos kritikavimas) ne tik nepripažįstamas, bet dar ir stiprinamas bei atsisuka prieš pačią/patį kritikavusiąją/kritikavusįjį (smurtinių santykių požymiai)." 
                 },
                 4 : {
                     "image": "block1/4.jpg",
@@ -80,7 +80,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija susijusi su pagarba partnerės/io skoniui drabužiams. Pirmasis atsakymo variantas – pavyzdys pagarbaus, autonomiją kitam paliekančio santykio (sveikų santykių požymis; 2 taškai). Antrasis indikuoja nepagarbą, t.y. kišimąsi į partnerės/io kasdienius pasirinkimus (nesveikų santykių požymis; 1 taškas). Trečiasis rodo akivaizdų mėginimą valdyti kitą asmenį (neleidžiama pasirinkti) bei žeminimą (smurtinių santykių požymis; 0 taškų)." 
+                    "explanation": "Ši situacija susijusi su pagarba partnerės/io skoniui drabužiams. Pirmasis atsakymo variantas – pavyzdys pagarbaus, autonomiją kitam paliekančio santykio (sveikų santykių požymis). Antrasis indikuoja nepagarbą, t.y. kišimąsi į partnerės/io kasdienius pasirinkimus (nesveikų santykių požymis). Trečiasis rodo akivaizdų mėginimą valdyti kitą asmenį (neleidžiama pasirinkti) bei žeminimą (smurtinių santykių požymis)." 
                 },
                 5 : {
                     "image": "block1/5.jpg",
@@ -100,7 +100,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija susijusi su pagarba partnerės/io skoniui pramogoms, menui, kultūrai. Pirmajame atsakymo variante demonstruojama pagarba kito skoniui ir abi puses patenkinti galinčio susitarimo paieškos (sveikų santykių požymiai; 2 taškai). Antrasis rodo nenorą tartis, šiokį tokį kaltinimą (nesveikų santykių požymiai; 1 taškas). Trečiasis – jau akivaizdus kito žmogaus žeminimas, jo skonio ir tuo pačiu asmenybės niekinimas (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Ši situacija susijusi su pagarba partnerės/io skoniui pramogoms, menui, kultūrai. Pirmajame atsakymo variante demonstruojama pagarba kito skoniui ir abi puses patenkinti galinčio susitarimo paieškos (sveikų santykių požymiai). Antrasis rodo nenorą tartis, šiokį tokį kaltinimą (nesveikų santykių požymiai). Trečiasis – jau akivaizdus kito žmogaus žeminimas, jo skonio ir tuo pačiu asmenybės niekinimas (smurtinių santykių požymiai)." 
                 },
                 6 : {
                     "image": "block1/6.jpg",
@@ -120,7 +120,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija susijusi su pasitikėjimu partnere/iu, pripažinimu jos/jo autonomijos, suvokimu ir priėmimu to, kad kitam reikia laiko bei veiklų atskirai. Pirmasis atsakymo variantas rodo partnerės/io autonomijos priėmimą, kito asmenybės augimo palaikymą (sveikų santykių požymiai; 2 taškai). Antrajame galima matyti kišimąsi į partnerės/io pasirinkimus, autonomijos negerbimą, kritiką (nesveikų santykių požymiai; 1 taškas). Trečiasis atsakymo variantas – kaltinimai (neištikimybe), visiško nepasitikėjimo demonstravimas, draudimas kitam užsiimti savarankiška veikla (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija susijusi su pasitikėjimu partnere/iu, pripažinimu jos/jo autonomijos, suvokimu ir priėmimu to, kad kitam reikia laiko bei veiklų atskirai. Pirmasis atsakymo variantas rodo partnerės/io autonomijos priėmimą, kito asmenybės augimo palaikymą (sveikų santykių požymiai). Antrajame galima matyti kišimąsi į partnerės/io pasirinkimus, autonomijos negerbimą, kritiką (nesveikų santykių požymiai). Trečiasis atsakymo variantas – kaltinimai (neištikimybe), visiško nepasitikėjimo demonstravimas, draudimas kitam užsiimti savarankiška veikla (smurtinių santykių požymiai)." 
                 },
                 7 : {
                     "image": "block1/7.jpg",
@@ -140,7 +140,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija nurodo į tipinį santykių sveikumo indikatorių – kito asmens savarankiškumo pripažinimą/nepripažinimą ir palaikymą/nepalaikymą. Pirmasis atsakymo variantas rodo partnerės/io autonomijos pripažinimą ir palaikymą (sveikų santykių požymiai; 2 taškai). Antrasis – nepriėmimą to, kad partneris/ė turi poreikį matytis su kitais žmonėmis, šiuo atveju – šeimos nariais, ir nepasitikėjimą (nesveikų santykių požymis; 1 taškas). Trečiasis – draudimą kitam turėti savarankišką gyvenimą, manipuliaciją (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija nurodo į tipinį santykių sveikumo indikatorių – kito asmens savarankiškumo pripažinimą/nepripažinimą ir palaikymą/nepalaikymą. Pirmasis atsakymo variantas rodo partnerės/io autonomijos pripažinimą ir palaikymą (sveikų santykių požymiai). Antrasis – nepriėmimą to, kad partneris/ė turi poreikį matytis su kitais žmonėmis, šiuo atveju – šeimos nariais, ir nepasitikėjimą (nesveikų santykių požymis). Trečiasis – draudimą kitam turėti savarankišką gyvenimą, manipuliaciją (smurtinių santykių požymiai)." 
                 },
                 8 : {
                     "image": "block1/8.jpg",
@@ -160,7 +160,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija yra bent dviejų aspektų indikatorius: to, ar pora bendrauja atvirai, ir pagarbos partnerės/io autonomijai. Pirmajame atsakymo variante parodytas atviras ir palaikantis bendravimas, kuomet įsiklausoma į kito išsakomus rūpesčius (sveikų santykių požymis; 2 taškai). Antrasis atsakymo variantas rodo partnerės/io negirdėjimą ir neklausymą (nesveikų santykių požymis; 1 taškas). Trečiasis atsakymo variantas – pavyzdys to, kai partnerės/io rūpesčiai eliminuojami kaip niekingi, emocijos sumenkinamos ir autonomija užgniaužiama (smurtinių santykių požymiai; 0 taškų).2" 
+                    "explanation": "Ši situacija yra bent dviejų aspektų indikatorius: to, ar pora bendrauja atvirai, ir pagarbos partnerės/io autonomijai. Pirmajame atsakymo variante parodytas atviras ir palaikantis bendravimas, kuomet įsiklausoma į kito išsakomus rūpesčius (sveikų santykių požymis). Antrasis atsakymo variantas rodo partnerės/io negirdėjimą ir neklausymą (nesveikų santykių požymis). Trečiasis atsakymo variantas – pavyzdys to, kai partnerės/io rūpesčiai eliminuojami kaip niekingi, emocijos sumenkinamos ir autonomija užgniaužiama (smurtinių santykių požymiai).2" 
                 },
                 9 : {
                     "image": "block1/9.jpg",
@@ -180,7 +180,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija yra indikatorius to, ar santykiuose gerbiama partnerės/io autonomija, savarankiška veikla, ar skatinamas jos/jo kaip asmenybės augimas. Pirmasis atsakymo variantas yra pavyzdys pagarbaus ir kito asmeninį augimą skatinančio santykio (sveikų santykių požymiai; 2 taškai). Antrasis – pavyzdys kito savarankiškumo nepriėmimo (nesveikų santykių požymiai; 1 taškas). Trečiajame variante – draudimas kitam vystyti savo asmenybę ir turėti autonomiją (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija yra indikatorius to, ar santykiuose gerbiama partnerės/io autonomija, savarankiška veikla, ar skatinamas jos/jo kaip asmenybės augimas. Pirmasis atsakymo variantas yra pavyzdys pagarbaus ir kito asmeninį augimą skatinančio santykio (sveikų santykių požymiai). Antrasis – pavyzdys kito savarankiškumo nepriėmimo (nesveikų santykių požymiai). Trečiajame variante – draudimas kitam vystyti savo asmenybę ir turėti autonomiją (smurtinių santykių požymiai)." 
                 },
                 10 : {
                     "image": "block1/10.jpg",
@@ -200,7 +200,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija susijusi su tuo, ar gerbiama partnerės/io autonomija, savarankiškos veiklos. Pirmasis atsakymo variantas yra pavyzdys ne tik pagarbos tam, bet ir palaikymo (sveikų santykių požymiai; 2 taškai). Antrasis – nenoro priimti, kad partnerė/is turi ir savarankiškų veiklų bei iššūkių (nesveikų santykių požymiai; 1 taškas). Trečiajame variante pasigirsta grėsmingas ir manipuliatyvus tonas bei argumentai partnerės/io atžvilgiu (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija susijusi su tuo, ar gerbiama partnerės/io autonomija, savarankiškos veiklos. Pirmasis atsakymo variantas yra pavyzdys ne tik pagarbos tam, bet ir palaikymo (sveikų santykių požymiai). Antrasis – nenoro priimti, kad partnerė/is turi ir savarankiškų veiklų bei iššūkių (nesveikų santykių požymiai). Trečiajame variante pasigirsta grėsmingas ir manipuliatyvus tonas bei argumentai partnerės/io atžvilgiu (smurtinių santykių požymiai)." 
                 }
             }
         },
@@ -225,7 +225,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija susijusi su partnerės/io kūno ir preferencijų autonomija bei ribomis. Pirmasis atsakymo variantas rodo pagarbą kito kūnui ir apsisprendimui (sveikų santykių požymiai; 2 taškai). Antrasis – nenorą kūno autonomijos priimti ir jos gerbti (nesveikų santykių požymiai; 1 taškas). Trečiasis – valdingas ir smurtiškas partnerės/io kūno autonomijos ir ribų peržengimas, atmetimas to, kad partnerė/is išvis turi savarankiškumą ir teises į savo kūną (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija susijusi su partnerės/io kūno ir preferencijų autonomija bei ribomis. Pirmasis atsakymo variantas rodo pagarbą kito kūnui ir apsisprendimui (sveikų santykių požymiai). Antrasis – nenorą kūno autonomijos priimti ir jos gerbti (nesveikų santykių požymiai). Trečiasis – valdingas ir smurtiškas partnerės/io kūno autonomijos ir ribų peržengimas, atmetimas to, kad partnerė/is išvis turi savarankiškumą ir teises į savo kūną (smurtinių santykių požymiai)." 
                 },
                 2 : {
                     "image": "block2/2_2.jpg",
@@ -245,7 +245,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija yra indikatorius to, ar santykiuose yra gerbiama partnerės/io seksualinės preferencijos, autonomija, ar dominuoja lygus dialoginis bendravimas. Pirmasis atsakymo variantas yra pavyzdys ir pagarbos seksualinei autonomijai, preferencijoms, ir jame atsispindi noras išgirsti partnerę/į, rasti bendrą abu tenkinantį variantą (sveikų santykių požymiai; 2 taškai). Antrajame atsakymo variante nėra nei noro išgirsti kitą, nei pagarbos autonomijai, vietoj to – lengvas spaudimas (nesveikų santykių požymiai; 1 taškas). Trečiasis variantas – vieno iš partnerių egocentrizmo pavyzdys, vieno asmens manipuliatyvus pajungimas kito valiai (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija yra indikatorius to, ar santykiuose yra gerbiama partnerės/io seksualinės preferencijos, autonomija, ar dominuoja lygus dialoginis bendravimas. Pirmasis atsakymo variantas yra pavyzdys ir pagarbos seksualinei autonomijai, preferencijoms, ir jame atsispindi noras išgirsti partnerę/į, rasti bendrą abu tenkinantį variantą (sveikų santykių požymiai). Antrajame atsakymo variante nėra nei noro išgirsti kitą, nei pagarbos autonomijai, vietoj to – lengvas spaudimas (nesveikų santykių požymiai). Trečiasis variantas – vieno iš partnerių egocentrizmo pavyzdys, vieno asmens manipuliatyvus pajungimas kito valiai (smurtinių santykių požymiai)." 
                 },
                 3 : {
                     "image": "block2/2_3.jpg",
@@ -265,7 +265,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija – pasitikėjimo tarp partnerių indikatorius. Pirmas atsakymo variantas rodo sveiką smalsumą be jokių pašalinių, nepasitikėjimą reiškiančių elementų (sveikų santykių požymiai; 2 taškai). Antrasis – nepasitikėjimą ir iš to kylantį nenorą partnerės/io palikti vieno nė minutei (nesveikų santykių požymiai; 1 taškas). Trečiasis – stiprius kaltinimus partnerei/iui dėl nieko, itin stiprų įtarumą, nepasitikėjimą, ir galiausiai žeminimą (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Ši situacija – pasitikėjimo tarp partnerių indikatorius. Pirmas atsakymo variantas rodo sveiką smalsumą be jokių pašalinių, nepasitikėjimą reiškiančių elementų (sveikų santykių požymiai). Antrasis – nepasitikėjimą ir iš to kylantį nenorą partnerės/io palikti vieno nė minutei (nesveikų santykių požymiai). Trečiasis – stiprius kaltinimus partnerei/iui dėl nieko, itin stiprų įtarumą, nepasitikėjimą, ir galiausiai žeminimą (smurtinių santykių požymiai)." 
                 },
                 4 : {
                     "image": "block2/2_4.jpg",
@@ -285,7 +285,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija susijusi su tuo, kiek gerbiama partnerės/io autonomija. Pirmasis atsakymo variantas rodo, kaip gali suderėti šilti jausmai, pozityvus prieraišumas kito atžvilgiu su pagarba kito savarankiškumui (sveikų santykių požymiai; 2 taškai). Antrasis variantas – pavyzdys kito autonomijos nepaisymo (nesveikų santykių požymis; 1 taškas). Trečiasis – pavyzdys to, kaip partnerės/io valią ir savarankiškumą mėginama palaužti per grasinimus (smurtinių santykių požymis; 0 taškų)." 
+                    "explanation": "Ši situacija susijusi su tuo, kiek gerbiama partnerės/io autonomija. Pirmasis atsakymo variantas rodo, kaip gali suderėti šilti jausmai, pozityvus prieraišumas kito atžvilgiu su pagarba kito savarankiškumui (sveikų santykių požymiai). Antrasis variantas – pavyzdys kito autonomijos nepaisymo (nesveikų santykių požymis). Trečiasis – pavyzdys to, kaip partnerės/io valią ir savarankiškumą mėginama palaužti per grasinimus (smurtinių santykių požymis)." 
                 },
                 5 : {
                     "image": "block2/2_5.jpg",
@@ -305,7 +305,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija susijusi su tuo, kiek santykiuose gerbiama partnerės/io teisė bendrauti su kitais žmonėmis, kitaip tariant – autonomija. Pirmasis atsakymo variantas – pavyzdys pasitikėjimo partnere/iu (sveikų santykių požymis; 2 taškai). Antrajame atsispindi nepasitikėjimas, partnerės/io autonomijos negerbimas/baiminimasis (nesveikų santykių požymiai; 1 taškas). Trečiajame nepasitikėjimas jau yra perkeltas į veiksmus; partnerės/io savarankiškumas stipriai pažeisti (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija susijusi su tuo, kiek santykiuose gerbiama partnerės/io teisė bendrauti su kitais žmonėmis, kitaip tariant – autonomija. Pirmasis atsakymo variantas – pavyzdys pasitikėjimo partnere/iu (sveikų santykių požymis). Antrajame atsispindi nepasitikėjimas, partnerės/io autonomijos negerbimas/baiminimasis (nesveikų santykių požymiai). Trečiajame nepasitikėjimas jau yra perkeltas į veiksmus; partnerės/io savarankiškumas stipriai pažeisti (smurtinių santykių požymiai)." 
                 },
                 6 : {
                     "image": "block2/2_6.jpg",
@@ -325,7 +325,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija parodo, kaip poroje reaguojama į dėl vieno iš partnerių neatidumo įvykusias smulkias buitines problemas (kurios netgi neatnešė blogų pasekmių). Pirmajame atsakymo variante matyti nepriekabus ir pagarbus reagavimo ir bendravimo būdas (sveikų santykių požymiai; 2 taškai). Antrajame – neadekvati reakcija į nutikimą, nepagarbus bendravimas ir nepagrįstos išvados partnerės/io atžvilgiu (nesveikų santykių požymiai; 1 taškas). Trečiajame – itin nepagarbus tonas, į absoliutinimą krypstančios išvados partnerės/io atžvilgiu, kito asmenybės menkinimas (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija parodo, kaip poroje reaguojama į dėl vieno iš partnerių neatidumo įvykusias smulkias buitines problemas (kurios netgi neatnešė blogų pasekmių). Pirmajame atsakymo variante matyti nepriekabus ir pagarbus reagavimo ir bendravimo būdas (sveikų santykių požymiai). Antrajame – neadekvati reakcija į nutikimą, nepagarbus bendravimas ir nepagrįstos išvados partnerės/io atžvilgiu (nesveikų santykių požymiai). Trečiajame – itin nepagarbus tonas, į absoliutinimą krypstančios išvados partnerės/io atžvilgiu, kito asmenybės menkinimas (smurtinių santykių požymiai)." 
                 },
                 7 : {
                     "image": "block2/2_7.jpg",
@@ -345,7 +345,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija rodo tai, kaip santykiuose reaguojama į smulkias nesėkmes – ar jos adekvačiais išsprendžiamos prisiimant atsakomybę, ten kur reikia, ar jos nesprendžiamos ir atsiranda konfliktas, ar tai pereina į puolimą ir kito menkinimą. Pirmasis atsakymo variantas – adekvataus problemos sprendimo pavyzdys, kuomet prisiimama reikiama atsakomybė (sveikų santykių požymiai; 2 taškai). Antrasis variantas – menkos problemos pavertimas konfliktu neprisiimant atsakomybės dėl sprendimo (nesveikų santykių požymiai; 1 taškas). Trečiasis variantas – beprasmio konflikto eskalavimas, tariamos partnerės/io ydos absoliutinimas, kito menkinimas (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija rodo tai, kaip santykiuose reaguojama į smulkias nesėkmes – ar jos adekvačiais išsprendžiamos prisiimant atsakomybę, ten kur reikia, ar jos nesprendžiamos ir atsiranda konfliktas, ar tai pereina į puolimą ir kito menkinimą. Pirmasis atsakymo variantas – adekvataus problemos sprendimo pavyzdys, kuomet prisiimama reikiama atsakomybė (sveikų santykių požymiai). Antrasis variantas – menkos problemos pavertimas konfliktu neprisiimant atsakomybės dėl sprendimo (nesveikų santykių požymiai). Trečiasis variantas – beprasmio konflikto eskalavimas, tariamos partnerės/io ydos absoliutinimas, kito menkinimas (smurtinių santykių požymiai)." 
                 },
                 8 : {
                     "image": "block2/2_8.jpg",
@@ -365,7 +365,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija parodo kiek santykiuose esama nuoširdumo bei susikalbėjimo ir kiek gerbiama partnerės/io asmenybė bei savarankiškumas. Pirmasis atsakymo variantas rodo pozityvų požiūrį į pačius santykius ir kitą asmenį (sveikų santykių požymiai; 2 taškai). Antrasis variantas – pavyzdys to, kaip vienas iš poros narių nenori girdėti partnerės/io ir demonstruoja nepagarbą patiems santykiams (nesveikų santykių požymiai; 1 taškas). Trečiasis variantas – pavyzdys radikalaus savinimosi ir partnerės/io savarankiškumo neigimo (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija parodo kiek santykiuose esama nuoširdumo bei susikalbėjimo ir kiek gerbiama partnerės/io asmenybė bei savarankiškumas. Pirmasis atsakymo variantas rodo pozityvų požiūrį į pačius santykius ir kitą asmenį (sveikų santykių požymiai). Antrasis variantas – pavyzdys to, kaip vienas iš poros narių nenori girdėti partnerės/io ir demonstruoja nepagarbą patiems santykiams (nesveikų santykių požymiai). Trečiasis variantas – pavyzdys radikalaus savinimosi ir partnerės/io savarankiškumo neigimo (smurtinių santykių požymiai)." 
                 },
                 9 : {
                     "image": "block2/2_9.jpg",
@@ -385,7 +385,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija indikuoja tai, ar poroje gerbiamas partnerės/io savarankiškumas, veikla atskirai, asmeninis augimas ir kūno autonomija. Pirmasis atsakymo variantas rodo pagarbų ir palaikantį santykį (sveikų santykių požymiai; 2 taškai). Antrasis – nepagarbą partnerės/io kūnui (nesveikų santykių požymis; 1 taškas). Trečiasis – partnerės/io savarankiškumo laužymą, asmenybės niekinimą (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija indikuoja tai, ar poroje gerbiamas partnerės/io savarankiškumas, veikla atskirai, asmeninis augimas ir kūno autonomija. Pirmasis atsakymo variantas rodo pagarbų ir palaikantį santykį (sveikų santykių požymiai). Antrasis – nepagarbą partnerės/io kūnui (nesveikų santykių požymis). Trečiasis – partnerės/io savarankiškumo laužymą, asmenybės niekinimą (smurtinių santykių požymiai)." 
                 },
                 10 : {
                     "image": "block2/2_10.jpg",
@@ -405,14 +405,14 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija susijusi su tuo, kiek poroje gerbiamas partnerės/io savarankiškumas, galėjimas pasakyti „ne“ ir teisė bendrauti su kitais žmonėmis. Pirmajame atsakymo variante atsispindi adekvatus požiūris į kito autonomiją (sveikų santykių požymis; 2 taškai). Antrajame – nenoras priimti kito savarankiškumo, spaudimas būti kartu (nesveikų santykių požymis; 1 taškas). Trečiajame – partnerės/io autonomijos laužymas, draudimas bendrauti su kitais žmonėmis, mėginimas supriešinti su kitais užmetant partnerei/iui savo galią (smurtinių santykių požymis; 0 taškų)." 
+                    "explanation": "Situacija susijusi su tuo, kiek poroje gerbiamas partnerės/io savarankiškumas, galėjimas pasakyti „ne“ ir teisė bendrauti su kitais žmonėmis. Pirmajame atsakymo variante atsispindi adekvatus požiūris į kito autonomiją (sveikų santykių požymis). Antrajame – nenoras priimti kito savarankiškumo, spaudimas būti kartu (nesveikų santykių požymis). Trečiajame – partnerės/io autonomijos laužymas, draudimas bendrauti su kitais žmonėmis, mėginimas supriešinti su kitais užmetant partnerei/iui savo galią (smurtinių santykių požymis)." 
                 }
             }
         },
         3: {
             "situations": {
                 1 : {
-                    "image": "palette.png",
+                    "image": "3_1.jpg",
                     "description": "Jis/Ji serga ir žino, kad tu keliausi pietauti su šeima.",
                     "choices": 
                     {
@@ -429,10 +429,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija rodo tai, kiek santykiuose gerbiamas partnerės/io savarankiškumas ir teisė bendrauti su kitais artimais žmonėmis, šiuo atveju – su šeimos nariais. Pirmasis atsakymo variantas – pagarbos partnerės/io savarankiškumui ir palaikymo pavyzdys (sveikų santykių požymiai; 2 taškai). Antrasis variantas – nenoro priimti kito autonomijos pavyzdys (nesveikų santykių požymiai; 1 taškas). Trečiasis – stipraus partnerės/io savinimosi, akivaizdaus manipuliavimo ir priešinimo su šeimos nariais pavyzdys (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija rodo tai, kiek santykiuose gerbiamas partnerės/io savarankiškumas ir teisė bendrauti su kitais artimais žmonėmis, šiuo atveju – su šeimos nariais. Pirmasis atsakymo variantas – pagarbos partnerės/io savarankiškumui ir palaikymo pavyzdys (sveikų santykių požymiai). Antrasis variantas – nenoro priimti kito autonomijos pavyzdys (nesveikų santykių požymiai). Trečiasis – stipraus partnerės/io savinimosi, akivaizdaus manipuliavimo ir priešinimo su šeimos nariais pavyzdys (smurtinių santykių požymiai)." 
                 },
                 2 : {
-                    "image": "palette.png",
+                    "image": "3_2.jpg",
                     "description": "Jis/Ji tau padavė puoduką, šis išslydo tau iš rankos ir nukritęs sudužo. Jis/Ji:",
                     "choices": 
                     {
@@ -449,10 +449,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija rodo tai, ar santykiuose su partnere/iu yra bendraujama pagarbiai ir kaip reaguojama į smulkias buitines nesėkmes. Pirmasis atsakymo variantas – adekvačios reakcijos į nesėkmę (norima padėti) ir pagarbaus bendravimo pavyzdys (sveikų santykių požymiai; 2 taškai). Antrasis – nepagarbaus bendravimo, neadekvačios reakcijos į nesėkmę ir nenoro padėti pavyzdys (nesveikų santykių požymiai; 1 taškas). Trečiasis – ne tik smurtinio bendravimo (partnerė/is niekinama/niekinamas), bet ir itin neadekvačios reakcijos į smulkią nesėkmę pavyzdys – dėl vienos smulkmenos išsakoma itin negatyvi išvada apskritai apie kitą žmogų (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija rodo tai, ar santykiuose su partnere/iu yra bendraujama pagarbiai ir kaip reaguojama į smulkias buitines nesėkmes. Pirmasis atsakymo variantas – adekvačios reakcijos į nesėkmę (norima padėti) ir pagarbaus bendravimo pavyzdys (sveikų santykių požymiai). Antrasis – nepagarbaus bendravimo, neadekvačios reakcijos į nesėkmę ir nenoro padėti pavyzdys (nesveikų santykių požymiai). Trečiasis – ne tik smurtinio bendravimo (partnerė/is niekinama/niekinamas), bet ir itin neadekvačios reakcijos į smulkią nesėkmę pavyzdys – dėl vienos smulkmenos išsakoma itin negatyvi išvada apskritai apie kitą žmogų (smurtinių santykių požymiai)." 
                 },
                 3 : {
-                    "image": "palette.png",
+                    "image": "3_3.jpg",
                     "description": "Važiuoji aplankyti seniai matyto/s draugo/ės. Jis/Ji:",
                     "choices": 
                     {
@@ -469,10 +469,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija susijusi su tuo, kiek santykiuose gerbiama partnerės/io autonomija ir teisė bendrauti su kitais žmonėmis. Pirmasis atsakymo variantas – pagarbos kito savarankiškumui ir palaikymo pavyzdys (sveikų santykių požymiai; 2 taškai). Antrasis – pavyzdys nenoro paisyti partnerės/io savarankiškumo ir teisės bendrauti su kitais žmonėmis, be to, jai/jam nepelnytai permetama atsakomybė (nesveikų santykių požymiai; 1 taškas). Trečiasis – pavyzdys demonstruojamo stipraus nepasitikėjimo su akimirksniu pasirodančiais kaltinimais bei akivaizdžiu valdžios kito asmens atžvilgiu demonstravimu (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija susijusi su tuo, kiek santykiuose gerbiama partnerės/io autonomija ir teisė bendrauti su kitais žmonėmis. Pirmasis atsakymo variantas – pagarbos kito savarankiškumui ir palaikymo pavyzdys (sveikų santykių požymiai). Antrasis – pavyzdys nenoro paisyti partnerės/io savarankiškumo ir teisės bendrauti su kitais žmonėmis, be to, jai/jam nepelnytai permetama atsakomybė (nesveikų santykių požymiai). Trečiasis – pavyzdys demonstruojamo stipraus nepasitikėjimo su akimirksniu pasirodančiais kaltinimais bei akivaizdžiu valdžios kito asmens atžvilgiu demonstravimu (smurtinių santykių požymiai)." 
                 },
                 4 : {
-                    "image": "palette.png",
+                    "image": "3_4.jpg",
                     "description": "Jūsu susipykote ir jis/ji nesusivaldęs/usi tave aprėkė. Neužilgo sako:",
                     "choices": 
                     {
@@ -489,10 +489,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija susijusi su tuo, kiek poroje bendraujama pagarbiai, kiek prisiimama atsakomybės ir kaip sprendžiami konfliktai. Pirmasis atsakymo variantas – pagarbios komunikacijos ir noro konstruktyviai spręsti problemas pavyzdys (sveikų santykių požymiai; 2 taškai). Antrasis – pavyzdys problemos sprendimo suspendavimo, atsakomybės neprisiėmimo ir nepagarbaus bendravimo (nesveikų santykių požymiai; 1 taškas). Trečiasis – visos atsakomybės permetimo partnerei/iui, jos/jo kaltinimo ir savęs idealizavimo bei konflikto eskalavimo pavyzdys (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija susijusi su tuo, kiek poroje bendraujama pagarbiai, kiek prisiimama atsakomybės ir kaip sprendžiami konfliktai. Pirmasis atsakymo variantas – pagarbios komunikacijos ir noro konstruktyviai spręsti problemas pavyzdys (sveikų santykių požymiai). Antrasis – pavyzdys problemos sprendimo suspendavimo, atsakomybės neprisiėmimo ir nepagarbaus bendravimo (nesveikų santykių požymiai). Trečiasis – visos atsakomybės permetimo partnerei/iui, jos/jo kaltinimo ir savęs idealizavimo bei konflikto eskalavimo pavyzdys (smurtinių santykių požymiai)." 
                 },
                 5 : {
-                    "image": "palette.png",
+                    "image": "3_5.jpg",
                     "description": "Jis/Ji tau nuolat skambina ir rašo žinutes. Tu paprašai truputį sulėtinti tempą, paaiškini, kad tau reikia daugiau erdvės. Jis/Ji:",
                     "choices": 
                     {
@@ -509,10 +509,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija rodo, ar poroje gerbiama partnerės/io autonomija ir kaip sprendžiami tam tikri nesutarimai. Pirmasis atsakymo variantas – pavyzdys to, kai partnerei/iui paliekama laiko ir erdvės sau bei to, kai demonstruojamas noras abipusiškai ir konstruktyviai išspręsti nedidelius nesutarimus (sveikų santykių požymiai; 2 taškai). Antrasis atsakymo variantas – pavyzdys to, kai partnerei/iui nepaliekama erdvės bei laiko ir ji/jis yra spaudžiami (nesveikų santykių požymiai; 1 taškas). Trečiasis atsakymo variantas – akimirksniu vykdomo puolimo ir ryškios manipuliacijos bei egocentrizmo pavyzdžiai (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija rodo, ar poroje gerbiama partnerės/io autonomija ir kaip sprendžiami tam tikri nesutarimai. Pirmasis atsakymo variantas – pavyzdys to, kai partnerei/iui paliekama laiko ir erdvės sau bei to, kai demonstruojamas noras abipusiškai ir konstruktyviai išspręsti nedidelius nesutarimus (sveikų santykių požymiai). Antrasis atsakymo variantas – pavyzdys to, kai partnerei/iui nepaliekama erdvės bei laiko ir ji/jis yra spaudžiami (nesveikų santykių požymiai). Trečiasis atsakymo variantas – akimirksniu vykdomo puolimo ir ryškios manipuliacijos bei egocentrizmo pavyzdžiai (smurtinių santykių požymiai)." 
                 },
                 6 : {
-                    "image": "palette.png",
+                    "image": "3_6.jpg",
                     "description": "Skambučio metu jūs susipykote. Ir tu parašei, kad nenori dabar kalbėti. Jis/Ji:",
                     "choices": 
                     {
@@ -529,10 +529,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija parodo tai, ar santykiuose adekvačiai bei dialogiškai sprendžiamos iškilusios problemos bei ar gerbiama partnerės/io autonomija. Pirmasis atsakymo variantas – pavyzdys adekvataus ir pozityvaus rezultato ieškančio komunikavimo ir sprendimo būdo (sveikų santykių požymiai; 2 taškai). Antrasis variantas – pavyzdys partnerės/io ribų negerbimo, spaudimo ir konflikto eskalavimo (nesveikų santykių požymiai; 1 taškas). Trečiasis – pavyzdys manipuliatyvaus ir į beviltiškumą linkusio problemų (ne)sprendimo: apkaltinama/as partnerė/is, visa atsakomybė užkraunama jai/jam (smurtinių santykių požymiai; 0 taškų)." 
+                    "explanation": "Situacija parodo tai, ar santykiuose adekvačiai bei dialogiškai sprendžiamos iškilusios problemos bei ar gerbiama partnerės/io autonomija. Pirmasis atsakymo variantas – pavyzdys adekvataus ir pozityvaus rezultato ieškančio komunikavimo ir sprendimo būdo (sveikų santykių požymiai). Antrasis variantas – pavyzdys partnerės/io ribų negerbimo, spaudimo ir konflikto eskalavimo (nesveikų santykių požymiai). Trečiasis – pavyzdys manipuliatyvaus ir į beviltiškumą linkusio problemų (ne)sprendimo: apkaltinama/as partnerė/is, visa atsakomybė užkraunama jai/jam (smurtinių santykių požymiai)." 
                 },
                 7 : {
-                    "image": "palette.png",
+                    "image": "3_7.jpg",
                     "description": "Eisi pas grupioką/ę pasimokyti. Tai sužinojęs/usi:",
                     "choices": 
                     {
@@ -549,10 +549,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija indikuoja tai, kiek poroje gerbiamas partnerės/io savarankiškumas ir poreikis būti su kitais žmonėmis. Pirmasis atsakymo variantas rodo ne tik pagarbą autonomijai, bet ir palaikymą (sveikų santykių požymis; 2 taškai). Antrasis – partnerės/io autonomiškumo varžymą (nesveikų santykių požymis; 1 taškas). Trečiasis – ryškų manipuliatyvumą ir visišką nenorą priimti kito kaip atskiro asmens (smurtinių santykių požymis; 0 taškų)." 
+                    "explanation": "Ši situacija indikuoja tai, kiek poroje gerbiamas partnerės/io savarankiškumas ir poreikis būti su kitais žmonėmis. Pirmasis atsakymo variantas rodo ne tik pagarbą autonomijai, bet ir palaikymą (sveikų santykių požymis). Antrasis – partnerės/io autonomiškumo varžymą (nesveikų santykių požymis). Trečiasis – ryškų manipuliatyvumą ir visišką nenorą priimti kito kaip atskiro asmens (smurtinių santykių požymis)." 
                 },
                 8 : {
-                    "image": "palette.png",
+                    "image": "3_8.jpg",
                     "description": "Prieš susitinkant su savo partneriu/e, tau suskamba telefonas. Tuo metu ateina jis/ji, tu pabaigi kalbėti ir pasisveikini susitikus. Jis/Ji:",
                     "choices": 
                     {
@@ -569,10 +569,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija susijusi su tuo, ar poroje pasitikima vienas kitu ir ar gerbiama partnerės/io teisė bendrauti su kitais žmonėmis. Pirmasis atsakymo variantas rodo adekvatų suinteresuotą domėjimąsi partnerio/ės reikalais (sveikų santykių požymis; 2 taškai). Antrasis variantas signalizuoja nepasitikėjimą (nesveikų santykių požymis; 1 taškas). Trečiasis – grubų partnerės/io ribų nepaisymą, egocentrizmą, draudimą partnerei/iui bendrauti su žmonėmis už poros ribų (smurtinių santykių požymis; 0 taškų)." 
+                    "explanation": "Ši situacija susijusi su tuo, ar poroje pasitikima vienas kitu ir ar gerbiama partnerės/io teisė bendrauti su kitais žmonėmis. Pirmasis atsakymo variantas rodo adekvatų suinteresuotą domėjimąsi partnerio/ės reikalais (sveikų santykių požymis). Antrasis variantas signalizuoja nepasitikėjimą (nesveikų santykių požymis). Trečiasis – grubų partnerės/io ribų nepaisymą, egocentrizmą, draudimą partnerei/iui bendrauti su žmonėmis už poros ribų (smurtinių santykių požymis)." 
                 },
                 9 : {
-                    "image": "palette.png",
+                    "image": "3_9.jpg",
                     "description": "Susitinkate prie kavinės. Tu vėluoji 5 minutes. Jis/Ji:",
                     "choices": 
                     {
@@ -589,10 +589,10 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši situacija leidžia įvertinti, kiek santykiuose pasitikima kitu asmeniui ir kokia atmosfera santykiams būdinga – lengva ar įtempta. Pirmasis atsakymo variantas rodo tolerantišką požiūrį į menkniekius (5 minučių vėlavimą) bei pasitikėjimą partnere/iu (sveikų santykių požymis; 2 taškai). Antrajame variante – priekaištavimas partnerei/iui, rodantis pagiežingą bendravimo būdą (nesveikų santykių požymis; 1 taškas). Trečiajame – visa tirada įvairių žalingų klausimų, stiprus įtarumas partnerės/io atžvilgiu, žeminanti kritika, egocentrizmas (smurtinių santykių požymis; 0 taškų)." 
+                    "explanation": "Ši situacija leidžia įvertinti, kiek santykiuose pasitikima kitu asmeniui ir kokia atmosfera santykiams būdinga – lengva ar įtempta. Pirmasis atsakymo variantas rodo tolerantišką požiūrį į menkniekius (5 minučių vėlavimą) bei pasitikėjimą partnere/iu (sveikų santykių požymis). Antrajame variante – priekaištavimas partnerei/iui, rodantis pagiežingą bendravimo būdą (nesveikų santykių požymis). Trečiajame – visa tirada įvairių žalingų klausimų, stiprus įtarumas partnerės/io atžvilgiu, žeminanti kritika, egocentrizmas (smurtinių santykių požymis)." 
                 },
                 10 : {
-                    "image": "palette.png",
+                    "image": "3_10.jpg",
                     "description": "Įsivaizduokite, kad jūsų santykiai nesiklosto taip, kaip abu tikėjotės ir tu inicijuoji išsiskyrimą. Jis/Ji:",
                     "choices": 
                     {
@@ -609,7 +609,7 @@ export default {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Ši hipotetinė situacija leidžia įvertinti, kiek santykiuose esama suvokimo, jog tai dviejų žmonių reikalas, kuris turi būti lygiavertis, kuriame suvokiama kiekvieno atsakomybė bei ribos. Pirmasis atsakymo variantas – pavyzdys to, kad partneris/ė suvokia šiuos dalykus ir išsiskyrimo nemato kaip dėl kažko vieno kaltės vykstančio dalyko (sveikų santykių požymis; 2 taškai). Antrasis variantas – pavyzdys santykio, kuriame trūksta lygiavertiškumo ir esama polinkio į manipuliaciją (nesveikų santykių požymiai; 1 taškas). Trečiasis variantas – pavyzdys tokio santykio, kuriame akivaizdžiai demonstruojamas nepasitikėjimas, kaltinama išdavyste, grasinama (smurtinių santykių požymis; 0 taškų)." 
+                    "explanation": "Ši hipotetinė situacija leidžia įvertinti, kiek santykiuose esama suvokimo, jog tai dviejų žmonių reikalas, kuris turi būti lygiavertis, kuriame suvokiama kiekvieno atsakomybė bei ribos. Pirmasis atsakymo variantas – pavyzdys to, kad partneris/ė suvokia šiuos dalykus ir išsiskyrimo nemato kaip dėl kažko vieno kaltės vykstančio dalyko (sveikų santykių požymis). Antrasis variantas – pavyzdys santykio, kuriame trūksta lygiavertiškumo ir esama polinkio į manipuliaciją (nesveikų santykių požymiai). Trečiasis variantas – pavyzdys tokio santykio, kuriame akivaizdžiai demonstruojamas nepasitikėjimas, kaltinama išdavyste, grasinama (smurtinių santykių požymis)." 
                 }
             }
         },

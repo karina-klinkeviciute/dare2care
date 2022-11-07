@@ -9,7 +9,12 @@
     <div id="quiz" class="container">
         <div id="intro" class="block"> 
             <div class="box">
-                Šis testas yra skirtas suprasti, kas yra toksiški santykiai ir kodėl, kokie yra santykiai, kuriuose dabar esi.
+            Sveiki! Kviečiam atlikti santykių testą, kuris padės įvertinti jūsų santykių sveikumą.
+            Testą sudaro 9 klausimai, kurie turi po tris galimus atsakymų variantus. Visos situacijos yra numanomos, nebūtinai jums realiai nutikusios, o atsakydami rinkitės atsakymą pagal tai, kaip galvojate, jog sureaguotų jūsų partneris/partnerė. Kiekvienas klausimas turi po vieną pasirinkimo galimybę.
+            Mes suprantame, jog porų gali būti įvairių, tad pavaizduoti personažai yra tik maža dalis porų įvairovės.
+            Pabaigę testą, gausite rezultatą, kuris parinktas pagal susumuotus jūsų atsakymų taškus. Po aprašymo pamatysite trumpą kiekvieno jūsų pasirinkto atsakymo komentarą.
+            Testą galite kartoti kelis kartus, nes jo klausimai gali skirtis.
+
             </div>
             <button id="start" class="button block">Pradėti testą</button>
         </div>
