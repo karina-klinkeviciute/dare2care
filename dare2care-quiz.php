@@ -22,11 +22,11 @@
             <div class="tile is-vertical is-8">
                 <div id="image" class="image is-4by3"></div>
                 <div id="description" class="tile is-parent"></div>
-                <div id="choices" class="tile is-parent">
-                    <div id="A" class="box"></div>
-                    <div id="B" class="box"></div>
-                    <div id="C" class="box"></div>
-                </div>
+                <ul id="choices" class="tile is-parent">
+                    <li id="A" class="box"></li>
+                    <li id="B" class="box"></li>
+                    <li id="C" class="box"></li>
+                </ul>
                 <button id="submit" class="button">Pateikti</button>
             </div>
         </div>

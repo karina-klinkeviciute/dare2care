@@ -112,37 +112,23 @@ const imageDiv = document.getElementById("image")
 const descriptionDiv = document.getElementById("description")
 const choicesDiv = document.getElementById("choices")
 
-// shuffling choices
-let choicesDivs = choicesDiv.childNodes
-let divs = []
-for (let div in choicesDivs) {
-divs.push(choicesDivs[div])
-}
-
-choicesDivs = divs
-    .map(value => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value)
-
-console.log(choicesDivs)
-
-choicesDiv.innerHTML = ""
-
-for (let div of choicesDivs){
-    let choiceDiv = document.createElement("div")
-    choiceDiv.id = div.id
-    choiceDiv.classList = div.classList
-    choicesDiv.appendChild(choiceDiv)
-}
-
-
 const choiceA = document.getElementById("A")
 const choiceB = document.getElementById("B")
 const choiceC = document.getElementById("C")
+
 const resultsDiv = document.getElementById("results")
+
+function randomizeChoices(){
+    // shuffling choices
+    let ul = document.getElementById("choices")
+    for (let i = ul.children.length; i >= 0; i--) {
+        ul.appendChild(ul.children[Math.random() * i | 0])
+    }
+}
 
 
 function showSituation() {
+    randomizeChoices()
     situationDiv.style.display = "block"
     startButton.style.display = "none"
     let situation = situations[currentSituation]
