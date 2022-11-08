@@ -1,9 +1,15 @@
-<!-- /**
+
+<?
+/**
  * Plugin Name: Dare2Care Quiz
  * Description: A plugin designed specifically for the relationship quiz for the Dare2Care project
  * Version: 1.0.1
  * Author: Karina Klinkevičiūtė, Asociacija Lygiai, 
- */ -->
+ */
+
+function dare2care(){
+
+ $content = '
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
     <div id="quiz" class="container">
@@ -33,8 +39,27 @@
         <div id="results" class="tile is-ancestor">
         
         </div>
+        <div class="explanations" id="explanations">
+            <div id = "explanation" class="explanation hidden" style="display:none">
+                <div id="explanation-image" class="image is-4by3 explanation-image"></div>
+                        <div id="explanation-description" class="tile is-parent explanation-description"></div>
+                        <ul id="explanation-choices" class="tile is-parent explanation-choices">
+                            <li id="explanation-A" class="box"></li>
+                            <li id="explanation-B" class="box"></li>
+                            <li id="explanation-C" class="box"></li>
+                        </ul>
+                        <div id = "explanation-text" class="explanation-text"></div>
+            </div>
+        </div>
 
     </div>
 
 
 <script type="module" src="dare2care-quiz.js"></script>
+';
+
+return $content;
+
+}
+
+add_shortcode('dare2care', 'dare2care');

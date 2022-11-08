@@ -90,8 +90,6 @@ async function selectSituations() {
 
     return situations
 
-    // TODO: randomizuojam atsakymus (kažkur, gal prieš rodant)
-
 }
 
 const situations = await selectSituations()
@@ -118,6 +116,9 @@ const choiceC = document.getElementById("C")
 
 const resultsDiv = document.getElementById("results")
 
+const explanationsDiv = document.getElementById("explanations")
+const explanationDiv = document.getElementById("explanation")
+
 function randomizeChoices(){
     // shuffling choices
     let ul = document.getElementById("choices")
@@ -133,14 +134,10 @@ function showSituation() {
     startButton.style.display = "none"
     let situation = situations[currentSituation]
     let image = situation["image"]
-    imageDiv.innerHTML = `<img src="images/${image}" alt="">`
-
     let description = situation["description"]
-
-    descriptionDiv.innerText = description
-
     let choices = situation["choices"]
-
+    imageDiv.innerHTML = `<img src="images/${image}" alt="">`
+    descriptionDiv.innerText = description
     for (let choice in choices)
     {
         let choiceDiv = document.getElementById(choice)
@@ -152,12 +149,12 @@ function showSituation() {
 
 function showResults() {
     let results = 0
-    for (let answer in answers){
-        if (answers[answer] == "B")
+    for (let answer of answers){
+        if (answer == "B")
         {
             results += 1
         }
-        else if (answers[answer] == "A")
+        else if (answer == "A")
         {
             results += 2
         }
@@ -169,20 +166,62 @@ function showResults() {
     else 
         {resultsDiv.innerHTML = explanations[3]}
 
+    // Showing selected answers and their explanations
+    for (let situationNumber in situations)
+        {
+            let situation = situations[situationNumber]
+            let answer = answers[situationNumber]
+            let image = situation["image"]
+            let description = situation["description"]
+            let choices = situation["choices"]
+            let explanation = situation["explanation"]
 
-    // TODO: Taip pat parodom atsakytus atsakymus ir situacijų paaiškinimus.
+            let explanationCloneDiv = explanationDiv.cloneNode(true)
+            explanationCloneDiv.style.display = "block"
+            explanationDiv.classList.remove("hidden")
+            explanationCloneDiv.id = explanationCloneDiv.id + "-" + situationNumber
+            for (let child of explanationCloneDiv.children)
+                {
+                    if (child.id == "explanation-image"){
+                        child.innerHTML = `<img src="images/${image}" alt="">`
+                    }
+                    if (child.id == "explanation-description"){
+                        child.innerHTML = description
+                    }
+                    if (child.id == "explanation-text"){
+                        child.innerHTML = explanation
+                    }
+                    if (child.id == "explanation-choices"){
+                        for (let childChoice of child.children){
+                            
+                            console.log(choices)
+                            let choiceLetter = childChoice.id[12]
+                            childChoice.innerHTML = choices[choiceLetter].text
+                            if (choiceLetter == answer){
+                                childChoice.classList.add("box", "chosen")
+                            }
+                            else {
+                                childChoice.classList.remove("box", "chosen")
+                            }
+                        }
+                    }
+                    child.id = child.id + "-" + situationNumber
+
+                }
+
+            explanationsDiv.appendChild(explanationCloneDiv)
+        }
+
 }
 
 function choiceClicked(choice)
 {
     currentChoice = choice
     let clickedDiv = document.getElementById(choice)
-    console.log("clicked: ", clickedDiv)
-    choiceA.classList.remove("box")
-    choiceB.classList.remove("box")
-    choiceC.classList.remove("box")
-    clickedDiv.classList.add("box")
-    // TODO: išskirti mygtuką, kuris buvo paspaustas, pavyzdžiui apibrėžti rėmeliu (ar tiksliau, pridėti klasę "chosen" o stylint su css) - principas padarytas, reiks suderinti su dizainu
+    choiceA.classList.remove("box", "chosen")
+    choiceB.classList.remove("box", "chosen")
+    choiceC.classList.remove("box", "chosen")
+    clickedDiv.classList.add("box", "chosen")
 }
 
 choiceA.addEventListener("click", ()=> choiceClicked("A"))
@@ -191,15 +230,19 @@ choiceC.addEventListener("click", ()=> choiceClicked("C"))
 
 startButton.addEventListener("click", showSituation)
 nextButton.addEventListener("click", ()=>{
-    answers.push(currentChoice)
-    currentSituation += 1
-    if (currentSituation <9){
+    // TODO: jei atsakymas nepasirinktas, neleisti eiti prie kito
+    console.log(currentChoice)
+    if (!currentChoice == "") {
+        answers.push(currentChoice)
+        currentSituation += 1
+        if (currentSituation <9){
 
-        showSituation()
+            showSituation()
+        }
+        else {
+            situationDiv.style.display = "none"
+            showResults()
+        }
+        currentChoice = ""
     }
-    else {
-        situationDiv.style.display = "none"
-        showResults()
-    }
-    
 })
