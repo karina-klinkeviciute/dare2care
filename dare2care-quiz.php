@@ -7,10 +7,17 @@
  * Author: Karina Klinkevičiūtė, Asociacija Lygiai, 
  */
 
+
+
 function dare2care( $atts, $content, $tag ){
 
+    wp_register_style( 'dare2care', 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css' );
+
+    wp_enqueue_style('dare2care');
+
+
  $content = '
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 
     <div id="quiz" class="container">
         <div id="intro" class="block"> 
@@ -60,12 +67,14 @@ function dare2care( $atts, $content, $tag ){
 
 return $content;
 
-}
-
-function register_shortcodes(){
-    add_shortcode('d2c', 'dare2care');
 };
 
-add_action( 'init', 'register_shortcodes');
+add_shortcode('d2c', 'dare2care');
+
+// function register_shortcodes(){
+//     add_shortcode('d2c', 'dare2care');
+// };
+
+// add_action( 'init', 'register_shortcodes');
 
 ?>
