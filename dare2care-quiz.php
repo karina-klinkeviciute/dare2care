@@ -7,7 +7,7 @@
  * Author: Karina Klinkevičiūtė, Asociacija Lygiai, 
  */
 
-function dare2care(){
+function dare2care( $atts, $content, $tag ){
 
  $content = '
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -62,4 +62,10 @@ return $content;
 
 }
 
-add_shortcode('dare2care', 'dare2care');
+function register_shortcodes(){
+    add_shortcode('d2c', 'dare2care');
+};
+
+add_action( 'init', 'register_shortcodes');
+
+?>
