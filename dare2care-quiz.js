@@ -8,8 +8,8 @@
 // Then we need to show first question. We can use event for this
 // After clicking "start quiz" or "next question" we add results to the total and take the next question. This needs a function and 2 events
 // If it's a last question, we show "show answer" instead of "submit and after clicking that we get all the results" 
-
-
+// import questions from './questions.js';
+(async() => {
 const explanations = {
     1: `
         Smurtiniai santykiai.
@@ -58,7 +58,9 @@ async function selectSituations() {
 
     const data = await import('./questions.js')
 
-    const groups = data.default.groups
+    const groups = data.questions.groups
+
+    console.log("data: ", data)
 
     var situations = []
 
@@ -95,9 +97,7 @@ async function selectSituations() {
 const situations = await selectSituations()
 
 var currentSituation = 0
-var pointsTotal = 0
 var answers = []
-var choice = ""
 var currentChoice = ""
 
 const startButton = document.getElementById("start")
@@ -107,6 +107,8 @@ const situationDiv = document.getElementById("situation")
 situationDiv.style.display = "none"
 
 const imageDiv = document.getElementById("image")
+const imageTag = document.getElementById("image-tag")
+const imageBaseSource = imageTag.src
 const descriptionDiv = document.getElementById("description")
 const choicesDiv = document.getElementById("choices")
 
@@ -118,6 +120,7 @@ const resultsDiv = document.getElementById("results")
 
 const explanationsDiv = document.getElementById("explanations")
 const explanationDiv = document.getElementById("explanation")
+
 
 function randomizeChoices(){
     // shuffling choices
@@ -136,7 +139,8 @@ function showSituation() {
     let image = situation["image"]
     let description = situation["description"]
     let choices = situation["choices"]
-    imageDiv.innerHTML = `<img src="images/${image}" alt="">`
+    // TODO: šitą sutvarkyti PHP dalyje, ir keisti tik tą dalį, kur pats paveiksliuko numeris. Tas pats kur explanation
+    imageTag.src = imageBaseSource + image
     descriptionDiv.innerText = description
     for (let choice in choices)
     {
@@ -183,7 +187,7 @@ function showResults() {
             for (let child of explanationCloneDiv.children)
                 {
                     if (child.id == "explanation-image"){
-                        child.innerHTML = `<img src="images/${image}" alt="">`
+                        child.innerHTML = `<img src="${imageBaseSource+image}" alt="">`
                     }
                     if (child.id == "explanation-description"){
                         child.innerHTML = description
@@ -230,7 +234,6 @@ choiceC.addEventListener("click", ()=> choiceClicked("C"))
 
 startButton.addEventListener("click", showSituation)
 nextButton.addEventListener("click", ()=>{
-    // TODO: jei atsakymas nepasirinktas, neleisti eiti prie kito
     console.log(currentChoice)
     if (!currentChoice == "") {
         answers.push(currentChoice)
@@ -246,3 +249,5 @@ nextButton.addEventListener("click", ()=>{
         currentChoice = ""
     }
 })
+
+})();

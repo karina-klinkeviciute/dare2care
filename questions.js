@@ -1,4 +1,4 @@
-export default {"groups": 
+export var questions = {"groups": 
 {  
     1: {
             "situations": {

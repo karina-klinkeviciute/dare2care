@@ -1,10 +1,10 @@
 
-<?
+<?php
 /**
  * Plugin Name: Dare2Care Quiz
  * Description: A plugin designed specifically for the relationship quiz for the Dare2Care project
  * Version: 1.0.1
- * Author: Karina Klinkevičiūtė, Asociacija Lygiai, 
+ * Author: Karina Klinkevičiūtė, Asociacija Lygiai, Dingusių žmonių šeimų paramos centras
  */
 
 
@@ -15,6 +15,9 @@ function dare2care( $atts, $content, $tag ){
 
     wp_enqueue_style('dare2care');
 
+    wp_enqueue_script('dare2care-quiz', plugins_url( 'dare2care-quiz.js', __FILE__ ), in_footer:true);
+
+    $image_base_url = plugins_url( 'images/', __FILE__ );
 
  $content = '
 
@@ -33,7 +36,7 @@ function dare2care( $atts, $content, $tag ){
         </div>
         <div id="situation" hidden class="tile is-ancestor">
             <div class="tile is-vertical is-8">
-                <div id="image" class="image is-4by3"></div>
+                <div id="image" class="image is-4by3"><img id="image-tag" src="'.$image_base_url.'" alt=""></div>
                 <div id="description" class="tile is-parent"></div>
                 <ul id="choices" class="tile is-parent">
                     <li id="A" class="box"></li>
@@ -61,8 +64,6 @@ function dare2care( $atts, $content, $tag ){
 
     </div>
 
-
-<script type="module" src="dare2care-quiz.js"></script>
 ';
 
 return $content;
@@ -71,10 +72,10 @@ return $content;
 
 add_shortcode('d2c', 'dare2care');
 
-// function register_shortcodes(){
-//     add_shortcode('d2c', 'dare2care');
-// };
+function register_shortcodes(){
+    add_shortcode('d2c', 'dare2care');
+};
 
-// add_action( 'init', 'register_shortcodes');
+add_action( 'init', 'register_shortcodes');
 
 ?>
