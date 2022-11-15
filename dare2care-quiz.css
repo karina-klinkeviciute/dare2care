@@ -1,0 +1,199 @@
+#d2c-quiz {
+    padding: 2em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    /* Variables */
+    --color-dark-blue: #273044;
+    --color-blue: #2c75e4;
+    --color-yellow: rgb(234, 184, 48);
+}
+
+#d2c-quiz .quiz-intro {
+    text-align: center;
+}
+
+#d2c-quiz .quiz-box {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+#d2c-quiz button {
+    padding: 1em 2em;
+    background-color: var(--color-blue);
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* A hack for local theme, should be removed before sending to the client */
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Quiz tile */
+
+.quiz-tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quiz-tile__image,
+.quiz-tile__content {
+    width: calc(50% - 1em);
+}
+
+.quiz-tile__image img {
+    width: 100%;
+    height: auto;
+}
+
+.quiz-tile__content {
+}
+
+
+.quiz-choices,
+.explanation-choices {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.quiz-answer-box,
+.quiz-explanation-box {
+    padding: 1rem 1rem 1rem 3rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 0.5em;
+    position: relative;
+    overflow:hidden
+}
+
+.quiz-answer-box {
+    cursor: pointer;
+}
+
+
+.quiz-answer-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    line-height: 1em;
+    border: 1px solid #ccc;
+}
+
+
+.quiz-answer-box.chosen,
+.quiz-explanation-box.chosen {
+    
+    box-shadow: 0 0 10px rgba(0,0,0, 0.15);
+}
+
+.quiz-answer-box.chosen::before {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+}
+
+
+.quiz-question,
+.explanation-description {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.quiz-alert {
+    padding: 0 0.5em;
+    border-radius: 20px;
+    margin-left: 3px;
+    color: #d51a59;
+    font-weight: bold;
+}
+
+.quiz-results {
+   padding: 2em 1em;
+    background-color: rgb(237, 248, 251);
+    display: none;
+}
+
+.quiz-results h3 {
+    margin-top: 0;
+}
+
+.quiz-results span {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
+
+
+.quiz-results h3,
+.quiz-results span {
+    text-align: center;
+}
+
+
+.explanation-description {
+    margin-top: 1em;
+}
+
+
+.explanation {
+    margin-top: 2em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid var(--color-yellow);
+}
+
+.explanation:first-of-type {
+    border-color: transparent;
+}
+
+.explanation-image {
+
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+}
+
+.explanation-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+.quiz-explanation-box::before {
+    content: "1";
+    position: absolute;
+    font-size: 2.5em;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+}
+
+.quiz-explanation-box.chosen::before {
+    color: var(--color-yellow);
+}
+
+.quiz-explanation-box:nth-of-type(2)::before {
+    content: "2";
+}
+
+.quiz-explanation-box:nth-of-type(3)::before {
+    content: "3";
+}

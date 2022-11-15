@@ -11,8 +11,8 @@
 // import questions from './questions.js';
 (async() => {
 const explanations = {
-    1: `
-        Smurtiniai santykiai.
+    1: `<span>Rezultatas:</span>
+        <h3>Smurtiniai santykiai</h3>
         <p>
         Tai santykiai, kuriuose yra daug žodinio, psichologinio, emocinio ar fizinio smurto elementų.
         Kai partneris/ė:
@@ -23,8 +23,8 @@ const explanations = {
         - kontroliuoja
         - izoliuoja savo partnerį/ę nuo kitų
         `,
-    2: `
-        Nesveiki santykiai
+    2: `<span>Rezultatas:</span>
+        <h3>Nesveiki santykiai</h3>
         <p>
         Tai santykiai, kuriems neretai trūksta pagarbos ir tolerancijos. Neretai partneriai/ės:
         - nebendrauja
@@ -34,7 +34,8 @@ const explanations = {
         - mėgina kontroliuoti
         - spaudžia kažkokiom veiklom
         - sukuria ekonominį spaudimą`,
-    3: `Sveiki santykiai
+    3: `<span>Rezultatas:</span>
+        <h3>Sveiki santykiai</h3>
         <p>
         Tai pagarbūs vienas kitam santykiai, kuomet tu ir tavo partneris/ė:
         - pasitiki vienas/a kitu/a
@@ -100,6 +101,7 @@ var currentSituation = 0
 var answers = []
 var currentChoice = ""
 
+const intro = document.getElementById("intro");
 const startButton = document.getElementById("start")
 const nextButton = document.getElementById("submit")
 
@@ -134,7 +136,7 @@ function randomizeChoices(){
 function showSituation() {
     randomizeChoices()
     situationDiv.style.display = "block"
-    startButton.style.display = "none"
+    intro.style.display = "none"
     let situation = situations[currentSituation]
     let image = situation["image"]
     let description = situation["description"]
@@ -152,6 +154,7 @@ function showSituation() {
 }
 
 function showResults() {
+    resultsDiv.style.display = "block";
     let results = 0
     for (let answer of answers){
         if (answer == "B")
@@ -226,6 +229,11 @@ function choiceClicked(choice)
     choiceB.classList.remove("box", "chosen")
     choiceC.classList.remove("box", "chosen")
     clickedDiv.classList.add("box", "chosen")
+    // TYTE: added quiz alert check
+    let quiz_alert = document.querySelector(".quiz-alert");
+    if (quiz_alert) {
+        quiz_alert.remove();
+    }
 }
 
 choiceA.addEventListener("click", ()=> choiceClicked("A"))
@@ -247,7 +255,15 @@ nextButton.addEventListener("click", ()=>{
             showResults()
         }
         currentChoice = ""
+        // TYTE: added this to remove the chosen class from the choices after clicking next
+        let chosen = document.querySelector('.chosen');
+        if (chosen) {
+            chosen.classList.remove('chosen');
+        }
+    // TYTE: added message that appears when no answer is selected    
+    } else {
+        nextButton.insertAdjacentHTML( 'afterEnd', '<span class="quiz-alert">Pasirinkite atsakymą!</span>' );
     }
-})
+});
 
 })();
