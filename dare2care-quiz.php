@@ -8,7 +8,7 @@
 
 function dare2care( $atts, $content, $tag ) {
 
-    wp_register_style( 'dare2care', 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css' );
+    // wp_register_style( 'dare2care', 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css' );
 
     wp_enqueue_style('dare2care-style', plugins_url('dare2care-quiz.css', __FILE__));
 
@@ -47,13 +47,13 @@ function dare2care( $atts, $content, $tag ) {
     <div class="explanations" id="explanations">
         <div id = "explanation" class="explanation hidden" style="display:none">
             <div id="explanation-image" class="image is-4by3 explanation-image"></div>
-                    <div id="explanation-description" class="tile is-parent explanation-description"></div>
-                    <ul id="explanation-choices" class="tile is-parent explanation-choices">
-                        <li id="explanation-A" class="box quiz-explanation-box"></li>
-                        <li id="explanation-B" class="box quiz-explanation-box"></li>
-                        <li id="explanation-C" class="box quiz-explanation-box"></li>
-                    </ul>
-                    <div id="explanation-text" class="explanation-text"></div>
+                <div id="explanation-description" class="tile is-parent explanation-description"></div>
+                <ul id="explanation-choices" class="tile is-parent explanation-choices">
+                    <li id="explanation-A" class="box quiz-explanation-box"></li>
+                    <li id="explanation-B" class="box quiz-explanation-box"></li>
+                    <li id="explanation-C" class="box quiz-explanation-box"></li>
+                </ul>
+            <div id="explanation-text" class="explanation-text"></div>
         </div>
     </div>
 </div>';
