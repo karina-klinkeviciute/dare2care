@@ -11,8 +11,8 @@
 // import questions from './questions.js';
 (async() => {
 const explanations = {
-    1: `
-        Smurtiniai santykiai.
+    1: `<span>Rezultatas:</span>
+        <h3>Smurtiniai santykiai</h3>
         <p>
         Tai santykiai, kuriuose yra daug žodinio, psichologinio, emocinio ar fizinio smurto elementų.
         Kai partneris/ė:
@@ -23,8 +23,8 @@ const explanations = {
         - kontroliuoja
         - izoliuoja savo partnerį/ę nuo kitų
         `,
-    2: `
-        Nesveiki santykiai
+    2: `<span>Rezultatas:</span>
+        <h3>Nesveiki santykiai</h3>
         <p>
         Tai santykiai, kuriems neretai trūksta pagarbos ir tolerancijos. Neretai partneriai/ės:
         - nebendrauja
@@ -34,7 +34,8 @@ const explanations = {
         - mėgina kontroliuoti
         - spaudžia kažkokiom veiklom
         - sukuria ekonominį spaudimą`,
-    3: `Sveiki santykiai
+    3: `<span>Rezultatas:</span>
+        <h3>Sveiki santykiai</h3>
         <p>
         Tai pagarbūs vienas kitam santykiai, kuomet tu ir tavo partneris/ė:
         - pasitiki vienas/a kitu/a
@@ -100,31 +101,33 @@ var currentSituation = 0
 var answers = []
 var currentChoice = ""
 
-const startButton = document.getElementById("start")
-const nextButton = document.getElementById("submit")
+const intro = document.getElementById("d2c-intro");
+const startButton = document.getElementById("d2c-start")
+const nextButton = document.getElementById("d2c-submit")
+const restartButton = document.getElementById("d2c-restart")
 
-const situationDiv = document.getElementById("situation")
+const situationDiv = document.getElementById("d2c-situation")
 situationDiv.style.display = "none"
 
-const imageDiv = document.getElementById("image")
-const imageTag = document.getElementById("image-tag")
+const imageDiv = document.getElementById("d2c-image")
+const imageTag = document.getElementById("d2c-image-tag")
 const imageBaseSource = imageTag.src
-const descriptionDiv = document.getElementById("description")
-const choicesDiv = document.getElementById("choices")
+const descriptionDiv = document.getElementById("d2c-description")
+const choicesDiv = document.getElementById("d2c-choices")
 
 const choiceA = document.getElementById("A")
 const choiceB = document.getElementById("B")
 const choiceC = document.getElementById("C")
 
-const resultsDiv = document.getElementById("results")
+const resultsDiv = document.getElementById("d2c-results")
 
-const explanationsDiv = document.getElementById("explanations")
-const explanationDiv = document.getElementById("explanation")
+const explanationsDiv = document.getElementById("d2c-explanations")
+const explanationDiv = document.getElementById("d2c-explanation")
 
 
 function randomizeChoices(){
     // shuffling choices
-    let ul = document.getElementById("choices")
+    let ul = document.getElementById("d2c-choices")
     for (let i = ul.children.length; i >= 0; i--) {
         ul.appendChild(ul.children[Math.random() * i | 0])
     }
@@ -134,7 +137,7 @@ function randomizeChoices(){
 function showSituation() {
     randomizeChoices()
     situationDiv.style.display = "block"
-    startButton.style.display = "none"
+    intro.style.display = "none"
     let situation = situations[currentSituation]
     let image = situation["image"]
     let description = situation["description"]
@@ -145,13 +148,16 @@ function showSituation() {
     for (let choice in choices)
     {
         let choiceDiv = document.getElementById(choice)
-        choiceDiv.classList.remove("box")
+        choiceDiv.classList.remove("d2c-box")
         choiceDiv.innerText = choices[choice].text
     }
     
 }
 
 function showResults() {
+    resultsDiv.style.display = "block";
+    explanationsDiv.removeAttribute("hidden");
+    restartButton.parentElement.removeAttribute("hidden");
     let results = 0
     for (let answer of answers){
         if (answer == "B")
@@ -186,33 +192,32 @@ function showResults() {
             explanationCloneDiv.id = explanationCloneDiv.id + "-" + situationNumber
             for (let child of explanationCloneDiv.children)
                 {
-                    if (child.id == "explanation-image"){
+                    if (child.id == "d2c-explanation-image"){
                         child.innerHTML = `<img src="${imageBaseSource+image}" alt="">`
                     }
-                    if (child.id == "explanation-description"){
+                    if (child.id == "d2c-explanation-description"){
                         child.innerHTML = description
                     }
-                    if (child.id == "explanation-text"){
+                    if (child.id == "d2c-explanation-text"){
                         child.innerHTML = explanation
                     }
-                    if (child.id == "explanation-choices"){
+                    if (child.id == "d2c-explanation-choices"){
                         for (let childChoice of child.children){
                             
                             console.log(choices)
                             let choiceLetter = childChoice.id[12]
                             childChoice.innerHTML = choices[choiceLetter].text
                             if (choiceLetter == answer){
-                                childChoice.classList.add("box", "chosen")
+                                childChoice.classList.add("d2c-box", "d2c-chosen")
                             }
                             else {
-                                childChoice.classList.remove("box", "chosen")
+                                childChoice.classList.remove("d2c-box", "d2c-chosen")
                             }
                         }
                     }
                     child.id = child.id + "-" + situationNumber
 
                 }
-
             explanationsDiv.appendChild(explanationCloneDiv)
         }
 
@@ -222,10 +227,15 @@ function choiceClicked(choice)
 {
     currentChoice = choice
     let clickedDiv = document.getElementById(choice)
-    choiceA.classList.remove("box", "chosen")
-    choiceB.classList.remove("box", "chosen")
-    choiceC.classList.remove("box", "chosen")
-    clickedDiv.classList.add("box", "chosen")
+    choiceA.classList.remove("d2c-box", "d2c-chosen")
+    choiceB.classList.remove("d2c-box", "d2c-chosen")
+    choiceC.classList.remove("d2c-box", "d2c-chosen")
+    clickedDiv.classList.add("d2c-box", "d2c-chosen")
+    // TYTE: added quiz alert check
+    let quiz_alert = document.querySelector(".d2c-quiz-alert");
+    if (quiz_alert) {
+        quiz_alert.remove();
+    }
 }
 
 choiceA.addEventListener("click", ()=> choiceClicked("A"))
@@ -247,7 +257,19 @@ nextButton.addEventListener("click", ()=>{
             showResults()
         }
         currentChoice = ""
+        // TYTE: added this to remove the chosen class from the choices after clicking next
+        let chosen = document.querySelector('.d2c-chosen');
+        if (chosen) {
+            chosen.classList.remove('d2c-chosen');
+        }
+    // TYTE: added message that appears when no answer is selected    
+    } else {
+        nextButton.insertAdjacentHTML( 'afterEnd', '<span class="d2c-quiz-alert">Pasirinkite atsakymą!</span>' );
     }
-})
+});
+
+restartButton.addEventListener("click", function() {
+    window.location.reload();
+});
 
 })();
