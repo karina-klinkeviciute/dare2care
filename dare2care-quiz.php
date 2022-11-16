@@ -12,7 +12,7 @@ function dare2care( $atts, $content, $tag ) {
 
     wp_enqueue_style('dare2care-style', plugins_url('dare2care-quiz.css', __FILE__));
 
-    wp_enqueue_script('dare2care-quiz', plugins_url( 'dare2care-quiz.js', __FILE__ ), in_footer : true);
+    wp_enqueue_script('dare2care-quiz', plugins_url( 'dare2care-quiz.js', __FILE__ ), '', '', true);
 
     $image_base_url = plugins_url( 'images/', __FILE__ );
 
