@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Dare2Care Quiz
  * Description: A plugin designed specifically for the relationship quiz for the Dare2Care project
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Karina Klinkevičiūtė, Asociacija Lygiai, Dingusių žmonių šeimų paramos centras
  */
 
