@@ -1,14 +1,3 @@
-
-
-
-// We need to first display description and a button "Start quiz"
-// We need to build the questions array first, taking random situations from each group and randomizing choices
-// Then we need to add initial variables for calculating results
-// We also need a variable for the question number
-// Then we need to show first question. We can use event for this
-// After clicking "start quiz" or "next question" we add results to the total and take the next question. This needs a function and 2 events
-// If it's a last question, we show "show answer" instead of "submit and after clicking that we get all the results" 
-// import questions from './questions.js';
 (async() => {
 const explanations = {
     1: `<span>Rezultatas:</span>
@@ -16,38 +5,38 @@ const explanations = {
         <p>
         Tai santykiai, kuriuose yra daug žodinio, psichologinio, emocinio ar fizinio smurto elementų.
         Kai partneris/ė:
-        - komunikuoja skaudindamas/a, manipuliuodamas/a ar grasindamas/a.
-        - negražiai elgiasi kito atžvilgiu (mistreating)
-        - be pagrindo kaltina išdavyste (cheating)
-        - nemano ir nepripažįsta, kad jo/s veiksmai yra smurtiniai
-        - kontroliuoja
-        - izoliuoja savo partnerį/ę nuo kitų
+        - komunikuoja skaudindamas/a, manipuliuodamas/a ar grasindamas/a;
+        - negražiai elgiasi kito atžvilgiu (mistreating);
+        - be pagrindo kaltina išdavyste (cheating);
+        - nemano ir nepripažįsta, kad jo/s veiksmai yra smurtiniai;
+        - kontroliuoja;
+        - izoliuoja savo partnerį/ę nuo kitų.
         `,
     2: `<span>Rezultatas:</span>
         <h3>Nesveiki santykiai</h3>
         <p>
         Tai santykiai, kuriems neretai trūksta pagarbos ir tolerancijos. Neretai partneriai/ės:
-        - nebendrauja
-        - negerbia
-        - nepasitiki
-        - nėra nuoširdūs/džios
-        - mėgina kontroliuoti
-        - spaudžia kažkokiom veiklom
-        - sukuria ekonominį spaudimą`,
+        - nebendrauja;
+        - negerbia;
+        - nepasitiki;
+        - nėra nuoširdūs/džios;
+        - mėgina kontroliuoti;
+        - spaudžia kažkokioms veikloms;
+        - sukuria ekonominį spaudimą.`,
     3: `<span>Rezultatas:</span>
         <h3>Sveiki santykiai</h3>
         <p>
         Tai pagarbūs vienas kitam santykiai, kuomet tu ir tavo partneris/ė:
-        - pasitiki vienas/a kitu/a
-        - esate nuoširdūs/džios ir atviri/os vienas/a kitam/ai
-        - lygūs
-        - kur galite mėgautis laiku būnant atskirai
-        - problemas ir svarbius klausimus sprendžiate kartu
-        - nedarote vienas/a kitam/ai ekonominio/finansinio spaudimo
-        - praktikuojate sutikimą (visais lygiais)
-        - pripažįstama autonomija ir orumas
-        - partnerio/ės asmenybės augimo palaikymas
-        - problemos sprendžiamos adekvačiai prisiimant atsakomybę
+        - pasitiki vienas/a kitu/a;
+        - esate nuoširdūs/džios ir atviri/os vienas/a kitam/ai;
+        - lygūs;
+        - kur galite mėgautis laiku būnant atskirai;
+        - problemas ir svarbius klausimus sprendžiate kartu;
+        - nedarote vienas/a kitam/ai ekonominio/finansinio spaudimo;
+        - praktikuojate sutikimą (visais lygiais);
+        - pripažįstama autonomija ir orumas;
+        - partnerio/ės asmenybės augimo palaikymas;
+        - problemos sprendžiamos adekvačiai prisiimant atsakomybę.
     `
 }
 
@@ -60,8 +49,6 @@ async function selectSituations() {
     const data = await import('./questions.js')
 
     const groups = data.questions.groups
-
-    console.log("data: ", data)
 
     var situations = []
 
@@ -142,7 +129,6 @@ function showSituation() {
     let image = situation["image"]
     let description = situation["description"]
     let choices = situation["choices"]
-    // TODO: šitą sutvarkyti PHP dalyje, ir keisti tik tą dalį, kur pats paveiksliuko numeris. Tas pats kur explanation
     imageTag.src = imageBaseSource + image
     descriptionDiv.innerText = description
     for (let choice in choices)
@@ -204,7 +190,6 @@ function showResults() {
                     if (child.id == "d2c-explanation-choices"){
                         for (let childChoice of child.children){
                             
-                            console.log(choices)
                             let choiceLetter = childChoice.id[12]
                             childChoice.innerHTML = choices[choiceLetter].text
                             if (choiceLetter == answer){
@@ -244,7 +229,6 @@ choiceC.addEventListener("click", ()=> choiceClicked("C"))
 
 startButton.addEventListener("click", showSituation)
 nextButton.addEventListener("click", ()=>{
-    console.log(currentChoice)
     if (!currentChoice == "") {
         answers.push(currentChoice)
         currentSituation += 1

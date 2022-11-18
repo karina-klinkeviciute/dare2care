@@ -7,3 +7,5 @@ If you want to use this code or images for your purposes, please contact us at i
 ## Changes
 
 ### 1.0.2 Changed image sizes
+
+### 1.0.4 Fixed typos and did some other changes to texts

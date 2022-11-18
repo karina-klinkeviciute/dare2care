@@ -1,9 +1,10 @@
 <?php
 /**
  * Plugin Name: Dare2Care Quiz
+ * Plugin URI: https://github.com/karina-klinkeviciute/dare2care
  * Description: A plugin designed specifically for the relationship quiz for the Dare2Care project
- * Version: 1.0.3
- * Author: Karina Klinkevičiūtė, Asociacija Lygiai, Dingusių žmonių šeimų paramos centras
+ * Version: 1.0.4
+ * Author: Karina Klinkevičiūtė, Asociacija Lygiai, Dingusių žmonių šeimų paramos centras. info@lygiai.org
  */
 
 function dare2care( $atts, $content, $tag ) {
