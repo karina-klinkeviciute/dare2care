@@ -60,7 +60,7 @@ export var questions = {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Aprašytoji situacija – kito žmogaus, t. y. moters po gimdymo, išvaizdos komentavimas ir reakcija į tai yra indikatorius to, kiek poroje įsileidžiamas ir kultivuojamas kito išorės kritikavimas. <br> Pirmasis atsakymo variantas – pavyzdys to, kai toks žalingas elgesys yra atpažįstamas, pripažįstamas, dėl jo atsiprašoma ir jis eliminuojamas (tai nurodo į pagarbius, kito asmens autonomiją ir orumą pripažįstančius, t. y. sveikus santykius). <br>Antrasis – pavyzdys to, kai problemos nematoma ir vietoj to žeminančiai sukritikuojama pati kritika (nesveikų santykių požymiai). <br>Trečiasis pavyzdys – žalingas elgesys (kito išvaizdos kritikavimas) ne tik nepripažįstamas, bet dar ir stiprinamas bei atsisuka prieš pačią/patį kritikavusiąją/kritikavusįjį (smurtinių santykių požymiai)." 
+                    "explanation": "Aprašytoji situacija – kito žmogaus, t. y. moters po gimdymo, išvaizdos komentavimas ir reakcija į tai yra indikatorius to, kiek poroje įsileidžiamas ir kultivuojamas kito išorės kritikavimas. <br>Pirmasis atsakymo variantas – pavyzdys to, kai toks žalingas elgesys yra atpažįstamas, pripažįstamas, dėl jo atsiprašoma ir jis eliminuojamas (tai nurodo į pagarbius, kito asmens autonomiją ir orumą pripažįstančius, t. y. sveikus santykius). <br>Antrasis – pavyzdys to, kai problemos nematoma ir vietoj to žeminančiai sukritikuojama pati kritika (nesveikų santykių požymiai). <br>Trečiasis pavyzdys – žalingas elgesys (kito išvaizdos kritikavimas) ne tik nepripažįstamas, bet dar ir stiprinamas bei atsisuka prieš pačią/patį kritikavusiąją/kritikavusįjį (smurtinių santykių požymiai)." 
                 },
                 4 : {
                     "image": "block1/4.jpg",
@@ -469,7 +469,7 @@ export var questions = {"groups":
                             "points": 0     
                         }
                     },
-                    "explanation": "Situacija susijusi su tuo, kiek santykiuose gerbiama partnerės/io autonomija ir teisė bendrauti su kitais žmonėmis. Pirmasis atsakymo variantas – pagarbos kito savarankiškumui ir palaikymo pavyzdys (sveikų santykių požymiai). Antrasis – pavyzdys nenoro paisyti partnerės/io savarankiškumo ir teisės bendrauti su kitais žmonėmis, be to, jai/jam nepelnytai permetama atsakomybė (nesveikų santykių požymiai). Trečiasis – pavyzdys demonstruojamo stipraus nepasitikėjimo su akimirksniu pasirodančiais kaltinimais bei akivaizdžiu valdžios kito asmens atžvilgiu demonstravimu (smurtinių santykių požymiai)." 
+                    "explanation": "Situacija susijusi su tuo, kiek santykiuose gerbiama partnerės/io autonomija ir teisė bendrauti su kitais žmonėmis. <br>Pirmasis atsakymo variantas – pagarbos kito savarankiškumui ir palaikymo pavyzdys (sveikų santykių požymiai). <br>Antrasis – pavyzdys nenoro paisyti partnerės/io savarankiškumo ir teisės bendrauti su kitais žmonėmis, be to, jai/jam nepelnytai permetama atsakomybė (nesveikų santykių požymiai). <br>Trečiasis – pavyzdys demonstruojamo stipraus nepasitikėjimo su akimirksniu pasirodančiais kaltinimais bei akivaizdžiu valdžios kito asmens atžvilgiu demonstravimu (smurtinių santykių požymiai)." 
                 },
                 4 : {
                     "image": "block3/3_4.jpg",
