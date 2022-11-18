@@ -437,7 +437,7 @@ export var questions = {"groups":
                     "choices": 
                     {
                         "A": {
-                            "text": "“Padėsiu tau sutrinkti šukes.”",
+                            "text": "“Padėsiu tau surinkti šukes.”",
                             "points": 2
                         },
                         "B": {
