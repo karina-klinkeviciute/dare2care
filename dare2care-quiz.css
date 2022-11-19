@@ -228,6 +228,82 @@ span.d2c-explanations-title {
     padding-top: 1em;
 }
 
+
+/* Progress bar */
+
+#d2c-progress {
+
+    margin-bottom: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.d2c-progress-indicator-wrap {
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+
+.d2c-progress-indicator {
+    position: relative;
+    width: 260px;
+    height: 8px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.d2c-progress-info {
+    font-size: 0.7em;
+    color: #666;
+}
+
+.d2c-progress-indicator::after {
+    transition: width 0.25s ease-in-out;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--color-yellow);
+    border-radius: 25px;
+}
+
+.d2c-progress-1 .d2c-progress-indicator::after {
+    width: calc(100%/9);
+}
+.d2c-progress-2 .d2c-progress-indicator::after {
+    width: calc(2* 100%/9);
+}
+.d2c-progress-3 .d2c-progress-indicator::after {
+    width: calc(3 * 100%/9);
+}
+.d2c-progress-4 .d2c-progress-indicator::after {
+    width: calc(4 * 100%/9);
+}
+.d2c-progress-5 .d2c-progress-indicator::after {
+    width: calc(5 * 100%/9);
+}
+.d2c-progress-6 .d2c-progress-indicator::after {
+    width: calc(6 * 100%/9);
+}
+.d2c-progress-7 .d2c-progress-indicator::after {
+    width: calc(7 * 100%/9);
+}
+.d2c-progress-8 .d2c-progress-indicator::after {
+    width: calc(8 * 100%/9);
+} 
+
+.d2c-progress-9 .d2c-progress-indicator::after {
+    width: calc(9 * 100%/9);
+}
+
+
 /* Responsiveness */
 
 @media (min-width: 768px) {

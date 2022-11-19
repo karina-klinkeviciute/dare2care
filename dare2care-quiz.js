@@ -94,7 +94,6 @@ const nextButton = document.getElementById("d2c-submit")
 const restartButton = document.getElementById("d2c-restart")
 
 const situationDiv = document.getElementById("d2c-situation")
-situationDiv.style.display = "none"
 
 const imageDiv = document.getElementById("d2c-image")
 const imageTag = document.getElementById("d2c-image-tag")
@@ -111,6 +110,8 @@ const resultsDiv = document.getElementById("d2c-results")
 const explanationsDiv = document.getElementById("d2c-explanations")
 const explanationDiv = document.getElementById("d2c-explanation")
 
+let progress = 0
+const progressDiv = document.getElementById("d2c-progress");
 
 function randomizeChoices(){
     // shuffling choices
@@ -123,7 +124,7 @@ function randomizeChoices(){
 
 function showSituation() {
     randomizeChoices()
-    situationDiv.style.display = "block"
+    situationDiv.removeAttribute("hidden");
     intro.style.display = "none"
     let situation = situations[currentSituation]
     let image = situation["image"]
@@ -232,6 +233,9 @@ nextButton.addEventListener("click", ()=>{
     if (!currentChoice == "") {
         answers.push(currentChoice)
         currentSituation += 1
+        progress ++;
+        progressDiv.querySelector(".d2c-progress-info span").innerText = `${progress}`;
+        progressDiv.classList.replace(`d2c-progress-${progress - 1}`, `d2c-progress-${progress}`);
         if (currentSituation <9){
 
             showSituation()
