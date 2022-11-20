@@ -3,17 +3,19 @@
  * Plugin Name: Dare2Care Quiz
  * Plugin URI: https://github.com/karina-klinkeviciute/dare2care
  * Description: A plugin designed specifically for the relationship quiz for the Dare2Care project
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Karina Klinkevičiūtė, Asociacija Lygiai, Dingusių žmonių šeimų paramos centras. info@lygiai.org
  */
 
 function dare2care( $atts, $content, $tag ) {
 
     // wp_register_style( 'dare2care', 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css' );
+    // wp_enqueue_style('dare2care-style', plugins_url('dare2care-quiz.css', __FILE__));
+    // Add timestamp to css
+    wp_enqueue_style( 'dare2care-style', plugin_dir_url( __FILE__ ) .  'dare2care-quiz.css', array(), filemtime( plugin_dir_path( __FILE__ ) .  'dare2care-quiz.css' ) );
+    wp_enqueue_script( 'dare2care-quiz', plugin_dir_url( __FILE__ ) .  'dare2care-quiz.js', '', filemtime( plugin_dir_path( __FILE__ ) .  'dare2care-quiz.js' ), true );
 
-    wp_enqueue_style('dare2care-style', plugins_url('dare2care-quiz.css', __FILE__));
-
-    wp_enqueue_script('dare2care-quiz', plugins_url( 'dare2care-quiz.js', __FILE__ ), '', '', true);
+    // wp_enqueue_script('dare2care-quiz', plugins_url( 'dare2care-quiz.js', __FILE__ ), '', '', true);
 
     $image_base_url = plugins_url( 'images/', __FILE__ );
     $image_intro_base_url = plugins_url( 'assets/intro.jpg', __FILE__ );
@@ -32,7 +34,8 @@ function dare2care( $atts, $content, $tag ) {
         </div>
         <button id="d2c-start" class="d2c-button d2c-block">Pradėti testą</button>
     </div>
-    <div id="d2c-situation" d2c-hidden class="d2c-tile d2c-is-ancestor">
+    <div id="d2c-situation" class="d2c-tile d2c-is-ancestor" hidden>
+        <div id="d2c-progress" class="d2c-progress d2c-progress-0"><div class="d2c-progress-info"><span>0</span> / 9</div><div class="d2c-progress-indicator-wrap"><div class="d2c-progress-indicator"></div></div></div>
         <div class="d2c-tile d2c-is-vertical d2c-is-8 d2c-quiz-tile">
             <div id="d2c-image" class="d2c-quiz-tile__image d2c-image d2c-is-4by3"><img id="d2c-image-tag" src="'.$image_base_url.'" alt=""></div>
             <div class="d2c-quiz-tile__content">
