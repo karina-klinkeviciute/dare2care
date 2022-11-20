@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/karina-klinkeviciute/dare2care
  * Description: A plugin designed specifically for the relationship quiz for the Dare2Care project
  * Version: 1.0.5
- * Author: Karina Klinkevičiūtė, Asociacija Lygiai, Dingusių žmonių šeimų paramos centras. info@lygiai.org
+ * Author: Karina Klinkevičiūtė, Ieva Sargautytė, Asociacija Lygiai, Dingusių žmonių šeimų paramos centras. info@lygiai.org
  */
 
 function dare2care( $atts, $content, $tag ) {
